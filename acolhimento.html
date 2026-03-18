@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Acompanhante</title>
+<link rel="stylesheet" href="style.css">
+ 
+<script>
+function mostrarCampos() {
+    var campos = document.getElementById("dadosAcompanhante");
+    campos.style.display = "block";
+}
+ 
+function esconderCampos() {
+    var campos = document.getElementById("dadosAcompanhante");
+    campos.style.display = "none";
+}
+</script>
+ 
+</head>
+<body>
+ 
+<div class="container">
+<h2>Possui acompanhante?</h2>
+ 
+<form action="triagem.html">
+ 
+<label>
+<input type="radio" name="acomp" onclick="mostrarCampos()" required> Sim
+</label>
+ 
+<label>
+<input type="radio" name="acomp" onclick="esconderCampos()"> Não
+</label>
+ 
+<div id="dadosAcompanhante" style="display:none;">
+ 
+<input type="text" placeholder="Nome completo">
+<input type="text" placeholder="CPF">
+<input type="text" placeholder="RG">
+ 
+<select>
+<option>Grau de parentesco</option>
+<option>Mãe</option>
+<option>Pai</option>
+<option>Esposo(a)</option>
+<option>Outro</option>
+</select>
+ 
+</div>
+ 
+<button type="submit">Próximo</button>
+ 
+
+</form>
+ 
+</div>
+ 
+</body>
+</html>

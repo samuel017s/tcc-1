@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Triagem</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="container">
+<h2>Triagem</h2>
+ 
+<form action="espera.html">
+ 
+<h3>Tipo sanguíneo</h3>
+<select required>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+</select>
+ 
+<h3>Alergias</h3>
+<label><input type="checkbox"> Medicamentos</label>
+<label><input type="checkbox"> Alimentos</label>
+<label><input type="checkbox"> Látex</label>
+ 
+<textarea placeholder="Outras informações"></textarea>
+ 
+<h3>Nível da dor (0 a 10)</h3>
+<input type="number" min="0" max="10">
+ 
+<button type="submit">Finalizar Cadastro</button>
+ 
+</form>
+ 
+</div>
+ 
+</body>
+</html>
